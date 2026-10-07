@@ -1,0 +1,13 @@
+tests/
+.github/
+examples/*.py
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.env.*
+.DS_Store
+.git/
+*.zip

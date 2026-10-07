@@ -1,0 +1,45 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "maskcontract_image.png"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "maskcontract_alpha_mask.png"
+    }
+  },
+  "3": {
+    "class_type": "MaskContractInspect",
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "mask": [
+        "2",
+        1
+      ],
+      "white_convention": "white_selects_edit",
+      "allow_batch1_broadcast": false,
+      "active_threshold": 0.5,
+      "min_coverage": 0.05,
+      "max_coverage": 0.4,
+      "extreme_policy": "review",
+      "max_frames": 64,
+      "max_total_pixels": 8388608,
+      "overlay_opacity": 0.4
+    }
+  },
+  "4": {
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "3",
+        0
+      ]
+    }
+  }
+}

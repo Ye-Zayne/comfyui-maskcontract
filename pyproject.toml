@@ -1,0 +1,21 @@
+[project]
+name = "comfyui-maskcontract"
+version = "0.1.0"
+description = "Explicit IMAGE/MASK canvas, batch, numeric and coverage contracts with per-frame evidence and strict gating before inpaint or composite."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "A ad钙"}]
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.urls]
+Repository = "https://github.com/Ye-Zayne/comfyui-maskcontract"
+"Bug Tracker" = "https://github.com/Ye-Zayne/comfyui-maskcontract/issues"
+
+[tool.comfy]
+PublisherId = "ye-zayne"
+DisplayName = "MaskContract"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["tests"]
